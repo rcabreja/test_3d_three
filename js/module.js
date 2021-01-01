@@ -1,4 +1,4 @@
-import * as THREE from '/js/three/build/three.module.js';
+import * as THREE from '/test_3d_three/js/three/build/three.module.js';
 export function load3d() {
     
     const scene = new THREE.Scene();
@@ -27,7 +27,7 @@ export function load3d() {
 }
 
     
-import { OBJLoader } from '/js/three/examples/jsm/loaders/OBJLoader.js';
+import { OBJLoader } from '/test_3d_three/js/three/examples/jsm/loaders/OBJLoader.js';
 export function load3d2(){
 
     let container;
@@ -85,7 +85,7 @@ export function load3d2(){
         // texture
 
         const textureLoader = new THREE.TextureLoader( manager );
-        const texture = textureLoader.load( '/model/earth_atmos_2048.jpg' );
+        const texture = textureLoader.load( '/test_3d_three/model/earth_atmos_2048.jpg' );
 
         // model
 
@@ -99,7 +99,7 @@ export function load3d2(){
         function onError() {}
 
         const loader = new OBJLoader( manager );
-        loader.load( '/model/iphone_6_model.obj', function ( obj ) {
+        loader.load( '/test_3d_three/model/iphone_6_model.obj', function ( obj ) {
             object = obj;
         }, onProgress, onError );
 
