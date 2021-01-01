@@ -85,7 +85,7 @@ export function load3d2(){
         // texture
 
         const textureLoader = new THREE.TextureLoader( manager );
-        const texture = textureLoader.load( 'model/earth_atmos_2048.jpg' );
+        const texture = textureLoader.load( '/model/earth_atmos_2048.jpg' );
 
         // model
 
@@ -99,7 +99,7 @@ export function load3d2(){
         function onError() {}
 
         const loader = new OBJLoader( manager );
-        loader.load( 'model/iphone_6_model.obj', function ( obj ) {
+        loader.load( '/model/iphone_6_model.obj', function ( obj ) {
             object = obj;
         }, onProgress, onError );
 
