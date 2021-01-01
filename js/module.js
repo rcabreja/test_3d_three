@@ -1,4 +1,4 @@
-import * as THREE from 'js/three/build/three.module.js';
+import * as THREE from '/js/three/build/three.module.js';
 export function load3d() {
     
     const scene = new THREE.Scene();
@@ -27,7 +27,7 @@ export function load3d() {
 }
 
     
-import { OBJLoader } from 'js/three/examples/jsm/loaders/OBJLoader.js';
+import { OBJLoader } from '/js/three/examples/jsm/loaders/OBJLoader.js';
 export function load3d2(){
 
     let container;
